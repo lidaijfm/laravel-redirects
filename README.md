@@ -70,7 +70,7 @@ Go to `App\Http\Kernel` and add the `Lidai\Redirects\Middleware\RedirectRequests
 protected $middlewareGroups = [
     'web' => [
         ...
-        \ApexMuse\Redirects\Middleware\RedirectRequests::class,
+        \Lidai\Redirects\Middleware\RedirectRequests::class,
 ```
 
 ### Creating redirects
