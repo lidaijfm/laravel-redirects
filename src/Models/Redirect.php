@@ -1,11 +1,11 @@
 <?php
 
-namespace ApexMuse\Redirects\Models;
+namespace Lidai\Redirects\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use ApexMuse\Redirects\Contracts\RedirectModelContract;
-use ApexMuse\Redirects\Exceptions\RedirectException;
+use Lidai\Redirects\Contracts\RedirectModelContract;
+use Lidai\Redirects\Exceptions\RedirectException;
 
 class Redirect extends Model implements RedirectModelContract
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ApexMuse\Redirects\Exceptions;
+namespace Lidai\Redirects\Exceptions;
 
 use Exception;
 
