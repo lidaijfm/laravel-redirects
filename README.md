@@ -32,19 +32,19 @@ This package can be useful from an SEO perspective, when in your application, yo
 Install the package via Composer:
 
 ```
-composer require apexmuse/laravel-redirects
+composer require lidai/laravel-redirects
 ```
 
 Publish the config file with:
 
 ```
-php artisan vendor:publish --provider="ApexMuse\Redirects\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Lidai\Redirects\ServiceProvider" --tag="config"
 ```
 
 Publish the migration file with:
 
 ```
-php artisan vendor:publish --provider="ApexMuse\Redirects\ServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Lidai\Redirects\ServiceProvider" --tag="migrations"
 ```
 
 After the migration has been published you can create the `redirects` table by running:
@@ -57,9 +57,9 @@ php artisan migrate
 
 ### Add the middleware
 
-In order for the redirecting functionality to actually happen, you need to add the `ApexMuse\Redirects\Middleware\RedirectRequests` middleware.
+In order for the redirecting functionality to actually happen, you need to add the `Lidai\Redirects\Middleware\RedirectRequests` middleware.
 
-Go to `App\Http\Kernel` and add the `ApexMuse\Redirects\Middleware\RedirectRequests` middleware in your `$middlewareGroups` groups of choice.
+Go to `App\Http\Kernel` and add the `Lidai\Redirects\Middleware\RedirectRequests` middleware in your `$middlewareGroups` groups of choice.
 
 ```php
 /**
@@ -75,9 +75,9 @@ protected $middlewareGroups = [
 
 ### Creating redirects
 
-You should never use the `ApexMuse\Redirects\Models\Redirect` directly, as this is the default concrete implementation for the `ApexMuse\Redirects\Contracts\RedirectModelContract`.   
+You should never use the `Lidai\Redirects\Models\Redirect` directly, as this is the default concrete implementation for the `Lidai\Redirects\Contracts\RedirectModelContract`.   
   
-Using the `ApexMuse\Redirects\Models\Redirect` model class directly will prevent you from being able to extend the model's capabilities.
+Using the `Lidai\Redirects\Models\Redirect` model class directly will prevent you from being able to extend the model's capabilities.
 
 You can create redirects that will be stored inside the `redirects` table like this:   
 
@@ -89,7 +89,7 @@ app('redirect.model')->create([
 ]);
 ```
 
-To see how you can extend the `ApexMuse\Redirects\Models\Redirect` model's capabilities, please read the comments from `/config/redirects.php -> redirect_model`
+To see how you can extend the `Lidai\Redirects\Models\Redirect` model's capabilities, please read the comments from `/config/redirects.php -> redirect_model`
 
 # Credits
 

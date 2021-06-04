@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) Andrei Badea & Neurony <andrei.badea@neurony.ro>
+Copyright (c) Andrei Badea & Neurony & Liam Aird<lidai@jfmedier.dk>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
