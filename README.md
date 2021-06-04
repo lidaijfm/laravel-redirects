@@ -93,12 +93,12 @@ To see how you can extend the `Lidai\Redirects\Models\Redirect` model's capabili
 
 # Credits
 
-- [Andrei Badea](https://github.com/zbiller)
+- [LiamAird](https://github.com/lidaijfm)
 - [All Contributors](../../contributors)
 
 # Security
 
-If you discover any security related issues, please email andrei.badea@neurony.ro instead of using the issue tracker.
+If you discover any security related issues, please email lidai@jfmedier.dk instead of using the issue tracker.
 
 # License
 
