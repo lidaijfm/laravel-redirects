@@ -19,16 +19,6 @@ class ServiceProvider extends BaseServiceProvider
     protected $router;
 
     /**
-     * Create a new service provider instance.
-     *
-     * @param Application $app
-     */
-    public function __construct(Application $app)
-    {
-        parent::__construct($app);
-    }
-
-    /**
      * Bootstrap the application services.
      *
      * @param Router $router
